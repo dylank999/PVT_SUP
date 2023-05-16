@@ -25,3 +25,21 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                   }
                  }
                 }
+
+WEBSITE_LIST = {"https://www.wikihow.com/":
+                {"specifics":"ablock=true;",
+                 "main_menu":'refresh_sens:id;header_logo',
+                 "endpoints":
+                 { 
+                  "random_page":  "id;nav_random",
+                  "login_page":  "id;nav_profile",
+                  "video":  'css selector;ytd-rich-item-renderer'
+                 },
+                  "sub-endpoints":
+                  {
+                      "main_menu":{"trending":'relies_prev:partial link text;Trending',
+                                   },
+                          
+                      },
+                  }
+                }
