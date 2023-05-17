@@ -225,11 +225,7 @@ if __name__ == "__main__":
     c_driver = create_chrome_driver(ublock=True, headless=False)
     website_to_test = "https://www.wikihow.com"
     #seleniumsselector_list = ["id;nav_random"] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending",
-   # seleniumsselector_list = ["id;nav_profile"]
-    seleniumsselector_list = ["id;hs"]
-    #seleniumsselector_list = ["id;header_logo"]
-    
-
+    #seleniumsselector_list = ['css selector;a[href="/wikiHow:Terms-of-Use"][title="wikiHow:Terms of Use]']
     #seleniumsselector_list = ["direct-link;signin", "partial link text;Create account"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
     #test_struct("https://www.youtube.com/") 
