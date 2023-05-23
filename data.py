@@ -54,13 +54,15 @@ WEBSITE_LIST = {"https://www.yelp.com/":
                  }
                 }
 
-WEBSITE_LIST = {"https://www.salesforce.com/ca/":
+WEBSITE_LIST = {"https://www.w3schools.com/": 
                 {"specifics":"ablock=true;",
                  "main_menu":'refresh_sens:id;guide-icon',
                  "endpoints":
                  { 
-                  "login-page":   'direct-link;signin',
-                  "video":  'css selector;ytd-rich-item-renderer'
+                  "HTML":   'partial link text;Learn HTML',
+                  "video":  'partial link text;Video Tutorial',
+                  "Ref":    '',
+                  "Certd":  ''
                  },
                   "sub-endpoints":
                   {
