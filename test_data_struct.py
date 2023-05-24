@@ -226,9 +226,8 @@ def test_ss_list(website_url:str, ss_list:list, driver):
 if __name__ == "__main__":
     #c_driver = create_edge_driver(ublock=True, headless=False)
     c_driver = create_chrome_driver(ublock=True, headless=False)
-    website_to_test = "https://www.w3schools.com/"
-    #seleniumsselector_list = ["id;onetrust-close-btn-container" ,"partial link text; Products"] # "refresh_sens:id;guide-icon", "relies_prev:partial link text;Trending",
-    seleniumsselector_list = ["partial link text;Video Tutorial"]
+    website_to_test = "https://www.godaddy.com/en-ca"
+    seleniumsselector_list = ["css selector;a.mpmh0vj[data-track-name='_link"]
     #seleniumsselector_list = ['css selector;a[href="/wikiHow:Terms-of-Use"][title="wikiHow:Terms of Use]']
     #seleniumsselector_list = ["direct-link;signin", "partial link text;Create account"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
