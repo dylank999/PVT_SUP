@@ -56,13 +56,15 @@ WEBSITE_LIST = {"https://www.yelp.com/":
 
 WEBSITE_LIST = {"https://www.w3schools.com/": 
                 {"specifics":"ablock=true;",
-                 "main_menu":'refresh_sens:id;guide-icon',
+                 "main_menu": "css selector;a.w3-bar-item.w3-button.w3-hover-none.w3-left.w3-padding-16.ga-top[href='https://www.w3schools.com'][title='Home'",
                  "endpoints":
                  { 
-                  "HTML":   'partial link text;Learn HTML',
-                  "video":  'partial link text;Video Tutorial',
-                  "Ref":    '',
-                  "Certd":  ''
+                  "NewsLetter": 'partial link text;NEWSLETTER',
+                  "Support":    'partial link text;SUPPORT',
+                  "HTML":       'partial link text;Learn HTML',
+                  "video":      'partial link text;Video Tutorial',
+                  "Ref":        'partial link text;HTML Reference',
+                  "Certd":      'partial link text;Get Certified',
                  },
                   "sub-endpoints":
                   {
@@ -71,3 +73,43 @@ WEBSITE_LIST = {"https://www.w3schools.com/":
                   }
                  }
                 }
+
+WEBSITE_LIST = {"https://www.washingtonpost.com/": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "refresh_sens:css selector;button[data-qa='sc-header-search-menu-button'",
+                 "endpoints":
+                 { 
+                    "AboutthePost": 'partial link text;About The Post',
+                    "NewsRoom": 'partial link text;Newsroom Policies & Standards',
+                 },
+                  "sub-endpoints":
+                  {
+                      "main_menu":{   "Politics":       'relies_prev:partial link text;Politics',
+                                      "Opinions":       'relies_prev:partial link text;Opinions',
+                                      "World":          'relies_prev:partial link text;World',
+                                      "Investigation":  'relies_prev:partial link text;Investigations',
+                                      "Climate":        'relies_prev:partial link text;Climate',
+                      },
+                  }
+                 }
+                }
+
+WEBSITE_LIST = {"https://www.godaddy.com/en-ca": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "css selector;a[data-track-name='godaddy_logo']",
+                 "endpoints":
+                 { 
+                    "AboutUs":   "css selector;a.mpmh0vj[data-track-name='default.aspx_link",
+                    "Careers":   "css selector;a.mpmh0vj[data-track-name='careers.godaddy.com_link",
+                    "ContactUs": "css selector;a.mpmh0vj[data-track-name='contact-us_link",
+                    "Blog":      "css selector;a.mpmh0vj[data-track-name='_link"
+                    
+                 },
+                  "sub-endpoints":
+                  {
+                      "main_menu":{   "Politics":       'relies_prev:partial link text;Politics',
+                      },
+                  }
+                 }
+                }
+
