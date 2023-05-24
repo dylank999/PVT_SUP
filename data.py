@@ -99,15 +99,50 @@ WEBSITE_LIST = {"https://www.godaddy.com/en-ca":
                  "main_menu": "css selector;a[data-track-name='godaddy_logo']",
                  "endpoints":
                  { 
-                    "AboutUs":   "css selector;a.mpmh0vj[data-track-name='default.aspx_link",
-                    "Careers":   "css selector;a.mpmh0vj[data-track-name='careers.godaddy.com_link",
-                    "ContactUs": "css selector;a.mpmh0vj[data-track-name='contact-us_link",
-                    "Blog":      "css selector;a.mpmh0vj[data-track-name='_link"
+                    "AboutUs":       "css selector;a.mpmh0vj[data-track-name='default.aspx_link",
+                    "Careers":       "css selector;a.mpmh0vj[data-track-name='careers.godaddy.com_link",
+                    "ContactUs":     "css selector;a.mpmh0vj[data-track-name='contact-us_link",
+                    "Blog":          "css selector;a.mpmh0vj[data-track-name='_link",
+                    "Legal":         "css selector; a.mpmh0vj[data-track-name='agreements_link",
+                    "StartForFree":  "partial link text;Start for Free"
+
+                 }
+                 }
+                }
+
+WEBSITE_LIST = {"https://www.etsy.com/": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "refresh_sens:css selector;button[data-qa='sc-header-search-menu-button'",
+                 "endpoints":
+                 { 
+                    "HomeFav":   "partial link text;Home Favourites",
+                    "Jewellery": "partial link text;Jewellery & Accessories",
+                    "Clothing":  "partial link text;Clothing & Shoes",
+                    "HomeLiving":"partial link text;Home & Living",
+                    "Wedding":   "partial link text;Wedding & Party",
+                    "ToysEnt":   "partial link text;Toys & Entertainment",
+                    "Art":       "partial link text;Art & Collectibles",
                     
+                 }
+                 }
+                }
+
+WEBSITE_LIST = {"https://en.softonic.com/": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "refresh_sens:css selector;button[data-qa='sc-header-search-menu-button'",
+                 "endpoints":
+                 { 
+                    "Apps": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(1) > a.menu-featured__link",
+                    "Gmes": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(2) > a.menu-featured__link",
+                    "News": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(3) > a.menu-featured__link",
                  },
                   "sub-endpoints":
                   {
                       "main_menu":{   "Politics":       'relies_prev:partial link text;Politics',
+                                      "Opinions":       'relies_prev:partial link text;Opinions',
+                                      "World":          'relies_prev:partial link text;World',
+                                      "Investigation":  'relies_prev:partial link text;Investigations',
+                                      "Climate":        'relies_prev:partial link text;Climate',
                       },
                   }
                  }
