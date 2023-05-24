@@ -226,8 +226,9 @@ def test_ss_list(website_url:str, ss_list:list, driver):
 if __name__ == "__main__":
     #c_driver = create_edge_driver(ublock=True, headless=False)
     c_driver = create_chrome_driver(ublock=True, headless=False)
-    website_to_test = "https://www.godaddy.com/en-ca"
-    seleniumsselector_list = ["css selector;a.mpmh0vj[data-track-name='_link"]
+    website_to_test = "https://en.softonic.com/"
+    #seleniumsselector_list = ["css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(1) > a.menu-featured__link"]
+    seleniumsselector_list = ["partial link text;Roblox games"]
     #seleniumsselector_list = ['css selector;a[href="/wikiHow:Terms-of-Use"][title="wikiHow:Terms of Use]']
     #seleniumsselector_list = ["direct-link;signin", "partial link text;Create account"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
