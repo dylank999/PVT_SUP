@@ -132,19 +132,57 @@ WEBSITE_LIST = {"https://en.softonic.com/":
                  "main_menu": "refresh_sens:css selector;button[data-qa='sc-header-search-menu-button'",
                  "endpoints":
                  { 
-                    "Apps": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(1) > a.menu-featured__link",
-                    "Gmes": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(2) > a.menu-featured__link",
-                    "News": "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(3) > a.menu-featured__link",
+                    "Apps":   "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(1) > a.menu-featured__link",
+                    "Games":  "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(2) > a.menu-featured__link",
+                    "News":   "css selector;ul.menu-featured__list > li.menu-featured__item:nth-child(3) > a.menu-featured__link",
+                    "Roblox": "partial link text;Roblox games",
+                    "Chrome": "partial link text;Chrome extensions"
+                 }
+                 }
+                }
+
+WEBSITE_LIST = {"https://9gag.com/": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "refresh_sens:css selector;.menu",
+                 "endpoints":
+                 { 
+                    "Shuffle": "partial link text;Shuffle",#This is another randomizer built into the site so you could run it a few times if you wanted 
+                    "GetApp": "partial link text;Get App",
+                    "Memeland":"partial link text;Memeland",
+                    "Cringe": "partial link text;Potatoz",
+                    "Captain": "partial link text;Captainz",
+
+ 
                  },
                   "sub-endpoints":
                   {
-                      "main_menu":{   "Politics":       'relies_prev:partial link text;Politics',
-                                      "Opinions":       'relies_prev:partial link text;Opinions',
-                                      "World":          'relies_prev:partial link text;World',
-                                      "Investigation":  'relies_prev:partial link text;Investigations',
-                                      "Climate":        'relies_prev:partial link text;Climate',
+                      "main_menu":{   "Home":     'relies_prev:partial link text;Home',
+                                      "Trending": 'relies_prev:partial link text;Trending',
+                                      "Fresh":    'relies_prev:partial link text;Fresh',
+                                      "Top":      'relies_prev:partial link text;Top',
+                                      "Schawb":   'relies_prev:partial link text;Girl',
                       },
                   }
                  }
                 }
 
+
+WEBSITE_LIST = {"https://williscollege.com/": 
+                {"specifics":"ablock=true;",
+                 "main_menu": "refresh_sens:css selector;div.x-anchor.x-anchor-toggle.has-graphic.e12395-e56.m9kb-y.m9kb-11.m9kb-13.m9kb-14.m9kb-15.m9kb-16.m9kb-18.m9kb-1b.m9kb-1e.m9kb-1g",
+                 "endpoints":
+                 { 
+                    "Events":    "partial link text;Business",
+                    "Business":   "partial link text;Business",
+                    "Technology": "partial link text;Technology",
+                    "Healthcare":  "partial link text;Health Care",
+ 
+                 },
+                  "sub-endpoints":
+                  {
+                      "main_menu":{   "Home":     'relies_prev:partial link text;Home',
+
+                      },
+                  }
+                 }
+                }
