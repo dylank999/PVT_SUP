@@ -43,8 +43,15 @@ WEBSITE_LIST = {"https://www.yelp.com/":
                  "main_menu":'refresh_sens:id;guide-icon',
                  "endpoints":
                  { 
-                  "login-page":   'direct-link;signin',
-                  "video":  'css selector;ytd-rich-item-renderer'
+                  "Review":  'partial link text;Write a Review',
+                  "About":   'partial link text;About Yelp',
+                  "Career":  'partial link text;Careers',
+                  "Events":  'partial link text;Events',
+                  "Talk":    'partial link text;Talk',
+                  "Support": 'partial link text; Support',
+                  "Develop": 'partial link text;Developers',
+                  "Privacy": 'partial link text;Privacy Policy',
+                  
                  },
                   "sub-endpoints":
                   {
@@ -65,12 +72,7 @@ WEBSITE_LIST = {"https://www.w3schools.com/":
                   "video":      'partial link text;Video Tutorial',
                   "Ref":        'partial link text;HTML Reference',
                   "Certd":      'partial link text;Get Certified',
-                 },
-                  "sub-endpoints":
-                  {
-                      "main_menu":{
-                      },
-                  }
+                 }
                  }
                 }
 
@@ -182,6 +184,51 @@ WEBSITE_LIST = {"https://williscollege.com/":
                   {
                       "main_menu":{   "Home":     'relies_prev:partial link text;Home',
 
+                      },
+                  }
+                 }
+                }
+
+WEBSITE_LIST = {"https://www.bankofamerica.com/": 
+                {"specifics":"ablock=true;",
+                 "checking_menu": "refresh_sens:css selector;ul.main-nav-links li:nth-child(1)",
+                 "savings_menu":  "refresh_sens:css selector;ul.main-nav-links li:nth-child(2)",
+                 "credit_menu":   "refresh_sens:css selector;ul.main-nav-links li:nth-child(3)",
+                 "auto_menu":     "refresh_sens:css selector;ul.main-nav-links li:nth-child(5)",
+                 "endpoints":
+                 { 
+                   
+                 },
+                  "sub-endpoints":
+                  {
+                      "checking_menu":{  "Online": 'relies_prev:partial link text;Online Banking' ,
+                                         "Mobile": 'relies_prev:partial link text;Mobile Banking',
+                                         "Debit":  'relies_prev:partial link text;Debit Card',
+                                         "Advntg": 'relies_prev:partial link text;Bank of America Advantage Banking',
+                                         "Student":'relies_prev:partial link text;Student Banking',
+
+                      },
+
+                      "savings_menu":{  "Online": 'relies_prev:partial link text;Bank of America Advantage Savings' ,
+                                         "IRAs": 'relies_prev:partial link text;IRAs',
+        
+                      },
+
+                       "credit_menu":{  "CredCrds": 'relies_prev:partial link text;Cash Back Credit Cards' ,
+                                         "Travel":  'relies_prev:partial link text;Travel and Airlines Rewards Cards',
+                                         "LowerIn": 'relies_prev:partial link text;Lower Interest Rate Cards',
+                                         "Points":  'relies_prev:partial link text;Points Rewards Cards',
+                                         "Rebuild": 'relies_prev:partial link text;Cards to Build or Rebuild Credit',
+                                         "Studnet": 'relies_prev:partial link text;Cards for Students',
+        
+                      },
+
+                       "auto_menu":{  "LoanR": 'relies_prev:partial link text;Check auto loan rates' ,
+                                      "LoanC": 'relies_prev:partial link text;Use the auto loan calculator',
+                                      "Shop":  'relies_prev:partial link text;Shop for a car',
+                                      "Apply": 'relies_prev:partial link text;Apply for an auto loan',
+
+        
                       },
                   }
                  }
