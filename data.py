@@ -68,7 +68,7 @@ WEBSITE_LIST = {"https://www.wikihow.com/":
                                  "Expert":  'relies_prev:partial link text;Expert Videos',
                                  "wikiPro": 'relies_prev:partial link text;About wikiHow Pro',
                                  "Coupon":  'relies_prev:partial link text;Coupons',
-                                 "Quiz":
+                                 "Quiz":    'relies_prev:partial link text;Quizzes',
   
                           
                       },
