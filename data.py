@@ -21,20 +21,58 @@ WEBSITE_LIST = {"https://www.youtube.com/":
                                },
                       "gaming":{"video":"rand_ind:css selector;ytd-video-renderer"
                           
-                      },
+                      },  
                   }
                  }
                 }
 
 WEBSITE_LIST = {"https://www.wikihow.com/":
                 {"specifics":"ablock=true;",
-                 "main_menu":'refresh_sens:id;header_logo',
+                 "Explore":'refresh_sens:partial link text;EXPLORE',
+                 "Pro":    'refresh_sens:partial link text;PRO',  
                  "endpoints":
                  { 
                   "random_page":  "id;nav_random", #Do this a bunch of times to get a new random article multiple times
                   "login_page":  "id;nav_profile",
                   "article":  'css selector;ytd-rich-item-renderer'
                  },
+                  "sub-endpoints":
+                  {
+                      "Explore":{   "Artwork": 'relies_prev:partial link text;Artwork',
+                                    "Books":   'relies_prev:partial link text;Books',
+                                    "Movies":  'relies_prev:partial link text;Movies',
+                                    "Crafts":  'relies_prev:partial link text;Crafts',
+                                    "Drawing": 'relies_prev:partial link text;Drawing',
+                                    "Games":   'relies_prev:partial link text;Games',
+                                    "Comp":    'relies_prev:partial link text;Computers',
+                                    "Phone":   'relies_prev:partial link text;Phone Skills',
+                                    "Hacker":  'relies_prev:partial link text;Technology',
+                                    "Men":     "relies_prev:partial link text;Men's Health",
+                                    "Mental":  'relies_prev:partial link text;Mental Health',
+                                    "Woman":   "relies_prev:partial link text;Women's Health",
+                                    "Fashion": 'relies_prev:partial link text;Fashion',
+                                    "Hair":    'relies_prev:partial link text;Hair Care',
+                                    "PersH":   'relies_prev:partial link text;Personal Hygiene',
+                                    "Dirty":   'relies_prev:partial link text;Dating',
+                                    "Love":    'relies_prev:partial link text;Love',
+                                    "Broke":   'relies_prev:partial link text;Relationship Issues',
+                                    "PersC":   'relies_prev:partial link text;Personal Care',
+                                    "SchStuff":'relies_prev:partial link text;School Stuff',
+                                    "Study":    'relies_prev:partial link text;Studying',
+                          
+                      },
+
+                       "Pro":{   "Courses": 'relies_prev:partial link text;Courses',
+                                 "Guides":  'relies_prev:partial link text;Guides',
+                                 "TechHP":  'relies_prev:partial link text;Tech Help Pro',
+                                 "Expert":  'relies_prev:partial link text;Expert Videos',
+                                 "wikiPro": 'relies_prev:partial link text;About wikiHow Pro',
+                                 "Coupon":  'relies_prev:partial link text;Coupons',
+                                 "Quiz":
+  
+                          
+                      },
+                  }
              }
           }
 
@@ -51,7 +89,10 @@ WEBSITE_LIST = {"https://www.yelp.com/":
                   "Support": 'partial link text; Support',
                   "Develop": 'partial link text;Developers',
                   "Privacy": 'partial link text;Privacy Policy',
-                  
+                  "Rest":    'partial link text;Restaurants',
+                  "Home":    'partial link text;Home Services',
+                  "LogIn":   'partial link text;Log In',
+
                  },
                   "sub-endpoints":
                   {
