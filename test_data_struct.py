@@ -226,9 +226,9 @@ def test_ss_list(website_url:str, ss_list:list, driver):
 if __name__ == "__main__":
     #c_driver = create_edge_driver(ublock=True, headless=False)
     c_driver = create_chrome_driver(ublock=True, headless=False)
-    website_to_test = "https://williscollege.com/"
-    #seleniumsselector_list = ["refresh sens:css selector;.menu" , "relies_prev:partial link text;Girl"]
-    seleniumsselector_list = ["refresh_sens:css selector;div.x-anchor.x-anchor-toggle.has-graphic.e12395-e56.m9kb-y.m9kb-11.m9kb-13.m9kb-14.m9kb-15.m9kb-16.m9kb-18.m9kb-1b.m9kb-1e.m9kb-1g" , "relies_prev:partial link text;Contact"]
+    website_to_test = "https://www.yelp.com/"
+    seleniumsselector_list = ["partial link text;Restaurants"]
+    #seleniumsselector_list = ["refresh_sens:css selector;ul.main-nav-links li:nth-child(5)" , "relies_prev:partial link text;Apply for an auto loan"]
     #seleniumsselector_list = ["css selector;a[href='https://9gag.com/shuffle']"]
     #seleniumsselector_list = ["direct-link;signin", "partial link text;Create account"]
     test_ss_list(website_to_test, seleniumsselector_list, c_driver)
